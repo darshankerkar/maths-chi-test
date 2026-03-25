@@ -13,6 +13,9 @@ def chi_square_test_of_independence(table: Sequence[Sequence[float]]) -> dict:
     obs = np.asarray(table, dtype=float)
     if obs.ndim != 2:
         raise ValueError("`table` must be a 2D array-like structure.")
+    
+    # Add pseudocounts to avoid 'expected <= 0' errors for tiny datasets
+    obs += 1e-5
 
     r, c = obs.shape
     if r < 2 or c < 2:
