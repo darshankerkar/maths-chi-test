@@ -313,9 +313,10 @@ Ensure environment variables for the API base URL are set in the frontend before
 
 - **Duration:** 2–4 minutes
 - **Must cover:**
-  - Group Number, Class and Division
-  - Topic Name: *Chi-Square Test of Independence*
-  - Team Leader Name
+  - Group Number - 11
+  - Class and Division - SE-INFT-C
+  - Topic Name - *Chi-Square Test*
+  - Team Leader - Ashutosh Tripathi
   - Live walkthrough: enter table → view χ², df, p-value → interpret result
 
 ---
