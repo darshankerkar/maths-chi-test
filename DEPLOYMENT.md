@@ -68,7 +68,8 @@ VITE_API_URL=http://localhost:8000  # Development
 
 #### Backend Requirements
 - Python 3.13+
-- Dependencies in `requirements.txt`
+- Dependencies in `requirements.txt` (FastAPI, Uvicorn, Pydantic only)
+- **No scipy/numpy required** - uses manual chi-square implementation
 - No additional environment variables needed
 
 ---
