@@ -1,0 +1,10 @@
+const downloadResult = () => {
+  const element = document.getElementById("result-section");
+
+  html2canvas(element).then((canvas) => {
+    const link = document.createElement("a");
+    link.download = "chi-square-result.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  });
+};
