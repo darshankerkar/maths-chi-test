@@ -124,16 +124,31 @@ function computeChiSquare(table: number[][]): ChiResult | null {
 
 export default function App() {
   const downloadResult = () => {
-  const element = document.querySelector(".dashboard-container");
+  const element = document.querySelector(".dashboard-container") as HTMLElement;
 
-  import("html2canvas").then((html2canvas) => {
-    html2canvas.default(element).then((canvas) => {
-      const link = document.createElement("a");
-      link.download = "ChiSight-Report.png";
-      link.href = canvas.toDataURL();
-      link.click();
-    });
-  });
+  if (!element) return;
+
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = element.scrollWidth;
+  canvas.height = element.scrollHeight;
+
+  ctx?.fillRect(0, 0, canvas.width, canvas.height);
+
+  const data = new XMLSerializer().serializeToString(element);
+
+  const img = new Image();
+  img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(data);
+
+  img.onload = function () {
+    ctx?.drawImage(img, 0, 0);
+
+    const link = document.createElement("a");
+    link.download = "ChiSight-Report.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+  };
 };
   const [students, setStudents] = useState<StudentRecord[]>([])
   const [name, setName] = useState('')
