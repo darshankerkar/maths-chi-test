@@ -58,6 +58,80 @@ table = [
     [15, 8,  2],
 ]
 ```
+# AI Usage vs Academic Performance — Chi-Square Test of Independence
+
+![Course](https://img.shields.io/badge/Course-Engineering%20Mathematics%204%20\(BSC07\)-black?style=flat-square)
+![Topic](https://img.shields.io/badge/Topic-Chi--Square%20Test%20of%20Independence-green?style=flat-square)
+![Python](https://img.shields.io/badge/🐍%20Python-3.13%2B-blue?style=flat-square)
+![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Uvicorn-teal?style=flat-square)
+![Frontend](https://img.shields.io/badge/⚛%20Frontend-React%2019%20%2B%20Vite-purple?style=flat-square)
+
+> **Course:** Engineering Mathematics 4 (EM-4 / BSC07)
+> **Topic Allocated:** Chi-Square Test of Independence
+
+## Advantages of the Proposed System
+
+* Manual chi-square implementation (no SciPy)
+* Works for any r × c contingency table
+* Real-time calculation
+* User-friendly UI
+* FastAPI backend
+* React frontend
+* Accurate statistical computation
+* Educational visualization of expected frequencies
+
+## Future Enhancements
+
+The following features can be added in future versions:
+
+* Cramer's V calculation
+* Graphical chi-square distribution curve
+* CSV file upload
+* Export results to PDF
+* Heatmap visualization
+* Confidence level selector
+* Downloadable report
+* Dark/light mode toggle
+
+---
+
+## Example Manual Calculation
+
+Observed Value:
+
+O = 5
+
+Row Total = 25
+Column Total = 30
+Grand Total = 80
+
+Expected Frequency:
+
+E = (Row Total × Column Total) / Grand Total
+E = (25 × 30) / 80
+E = 9.375
+
+Chi-Square Contribution:
+
+(O − E)² / E
+= (5 − 9.375)² / 9.375
+= 2.041
+
+The final chi-square value is the sum of all cell contributions.
+
+## Real World Applications
+
+The Chi-Square Test of Independence is used in:
+
+* Education analytics
+* Market research
+* Healthcare analysis
+* Finance analytics
+* Survey data analysis
+* Machine learning feature dependency
+
+---
+
 
 ---
 
@@ -207,6 +281,9 @@ maths-chi-test/
 │
 └── README.md
 ```
+## Conclusion
+
+The Chi-Square Test Web Application demonstrates a complete statistical workflow from user input to hypothesis testing and interpretation. The project uses a manual implementation of chi-square computation without relying on statistical libraries, ensuring conceptual clarity and academic value. The interactive frontend and FastAPI backend make the system suitable for both educational and practical use.
 
 ---
 
