@@ -58,17 +58,6 @@ table = [
     [15, 8,  2],
 ]
 ```
-# AI Usage vs Academic Performance — Chi-Square Test of Independence
-
-![Course](https://img.shields.io/badge/Course-Engineering%20Mathematics%204%20\(BSC07\)-black?style=flat-square)
-![Topic](https://img.shields.io/badge/Topic-Chi--Square%20Test%20of%20Independence-green?style=flat-square)
-![Python](https://img.shields.io/badge/🐍%20Python-3.13%2B-blue?style=flat-square)
-![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Uvicorn-teal?style=flat-square)
-![Frontend](https://img.shields.io/badge/⚛%20Frontend-React%2019%20%2B%20Vite-purple?style=flat-square)
-
-> **Course:** Engineering Mathematics 4 (EM-4 / BSC07)
-> **Topic Allocated:** Chi-Square Test of Independence
-
 ## Advantages of the Proposed System
 
 * Manual chi-square implementation (no SciPy)
