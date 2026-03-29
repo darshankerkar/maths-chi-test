@@ -82,32 +82,6 @@ The following features can be added in future versions:
 * Downloadable report
 * Dark/light mode toggle
 
----
-
-## Example Manual Calculation
-
-Observed Value:
-
-O = 5
-
-Row Total = 25
-Column Total = 30
-Grand Total = 80
-
-Expected Frequency:
-
-E = (Row Total × Column Total) / Grand Total
-E = (25 × 30) / 80
-E = 9.375
-
-Chi-Square Contribution:
-
-(O − E)² / E
-= (5 − 9.375)² / 9.375
-= 2.041
-
-The final chi-square value is the sum of all cell contributions.
-
 ## Real World Applications
 
 The Chi-Square Test of Independence is used in:
