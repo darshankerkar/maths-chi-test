@@ -11,7 +11,7 @@
 
 ---
 
-## Overview
+##   Overview
 
 This project answers a concrete statistical question: **is there a statistically significant relationship between students' AI tool usage and their academic performance?**
 
