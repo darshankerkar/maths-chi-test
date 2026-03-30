@@ -134,6 +134,7 @@ export default function App() {
   canvas.width = element.scrollWidth;
   canvas.height = element.scrollHeight;
 
+  if (ctx) ctx.fillStyle = "#ffffff";
   ctx?.fillRect(0, 0, canvas.width, canvas.height);
 
   const data = new XMLSerializer().serializeToString(element);
