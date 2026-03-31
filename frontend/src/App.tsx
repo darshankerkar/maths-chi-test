@@ -85,7 +85,7 @@ export default function App() {
       <main className="container">
         <h1>Chi-Square Test</h1>
         <p className="subtitle">
-          Association between <b>AI tool usage</b> and <b>academic performance</b>.
+          Analyze the association between <b>AI tool usage</b> and <b>academic performance</b>.
         </p>
 
         <section className="card">
