@@ -2,6 +2,9 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+  "node": "20.x"
+},
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,12 +12,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/papaparse": "^5.5.2",
+    "lucide-react": "^1.6.0",
+    "papaparse": "^5.5.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.0.1",
     "typescript": "~5.9.3",
     "vite": "^8.0.1"
   }
